@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coffee Collection</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- Header Image (optional background for top part) -->
+  <div class="relative h-[300px] bg-cover bg-center" style="background-image: url('https://source.unsplash.com/1280x300/?cafe');">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+  </div>
+
+  <!-- Collection Card -->
+  <div class="max-w-6xl mx-auto -mt-32 bg-gray-800 rounded-xl shadow-lg p-10 relative z-10">
+    <!-- Header -->
+    <div class="text-center mb-8">
+      <h1 class="text-3xl font-bold">Our Collection</h1>
+      <p class="text-gray-400 mt-2">Introducing our Coffee Collection, a selection of unique coffees<br>from different roast types and origins, expertly roasted in small batches and shipped fresh weekly.</p>
+      <div class="mt-4 space-x-2">
+        <button class="bg-gray-700 px-4 py-1 rounded-full text-white">All Products</button>
+        <button class="bg-gray-600 px-4 py-1 rounded-full text-white">Available Now</button>
+      </div>
+    </div>
+
+    <!-- Coffee Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Coffee Item -->
+      <div class="bg-gray-700 p-4 rounded-lg">
+        <div class="relative">
+          <img src="https://source.unsplash.com/200x150/?cappuccino" alt="Cappuccino" class="rounded-md">
+          <span class="absolute top-2 left-2 bg-yellow-300 text-xs text-black px-2 py-0.5 rounded-full">Popular</span>
+        </div>
+        <div class="mt-3">
+          <h3 class="text-lg font-semibold">Cappuccino</h3>
+          <div class="flex justify-between items-center text-sm text-gray-300 mt-1">
+            <span>⭐ 4.7 (65 votes)</span>
+            <span class="bg-green-200 text-green-800 px-2 py-0.5 rounded">$5.20</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gray-700 p-4 rounded-lg">
+        <div class="relative">
+          <img src="https://source.unsplash.com/200x150/?coffee,cup" alt="House Coffee" class="rounded-md">
+          <span class="absolute top-2 left-2 bg-yellow-300 text-xs text-black px-2 py-0.5 rounded-full">Popular</span>
+        </div>
+        <div class="mt-3">
+          <h3 class="text-lg font-semibold">House Coffee</h3>
+          <div class="flex justify-between items-center text-sm text-gray-300 mt-1">
+            <span>⭐ 4.85 (14 votes)</span>
+            <span class="bg-green-200 text-green-800 px-2 py-0.5 rounded">$3.50</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gray-700 p-4 rounded-lg">
+        <img src="https://source.unsplash.com/200x150/?espresso" alt="Espresso" class="rounded-md">
+        <div class="mt-3">
+          <h3 class="text-lg font-semibold">Espresso</h3>
+          <div class="flex justify-between items-center text-sm text-gray-300 mt-1">
+            <span>⭐ 4.9 (55 votes)</span>
+            <span class="bg-green-200 text-green-800 px-2 py-0.5 rounded">$2.50</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gray-700 p-4 rounded-lg">
+        <img src="https://source.unsplash.com/200x150/?latte" alt="Coffee Latte" class="rounded-md">
+        <div class="mt-3">
+          <h3 class="text-lg font-semibold">Coffee Latte</h3>
+          <div class="flex justify-between items-center text-sm text-gray-300 mt-1">
+            <span>⭐ 5.0 (23 votes)</span>
+            <span class="bg-green-200 text-green-800 px-2 py-0.5 rounded">$4.50</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gray-700 p-4 rounded-lg">
+        <img src="https://source.unsplash.com/200x150/?mocha" alt="Chocolate Coffee" class="rounded-md">
+        <div class="mt-3">
+          <h3 class="text-lg font-semibold">Chocolate Coffee</h3>
+          <div class="flex justify-between items-center text-sm text-gray-300 mt-1">
+            <span>⭐ 4.65 (122 votes)</span>
+            <div>
+              <span class="bg-green-200 text-green-800 px-2 py-0.5 rounded">$4.00</span>
+              <span class="text-red-500 text-xs ml-1">Sold out</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gray-700 p-4 rounded-lg">
+        <img src="https://source.unsplash.com/200x150/?pink,coffee" alt="Valentine Special" class="rounded-md">
+        <div class="mt-3">
+          <h3 class="text-lg font-semibold">Valentine Special</h3>
+          <div class="flex justify-between items-center text-sm text-gray-300 mt-1">
+            <span class="text-gray-400">☆ No ratings</span>
+            <span class="bg-green-200 text-green-800 px-2 py-0.5 rounded">$5.50</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+<script>
+  // Tailwind CSS configuration
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          'gray-800': '#2d3748',
+          'gray-700': '#4a5568',
+          'gray-600': '#718096',
+          'green-200': '#c6f6d5',
+          'green-800': '#22543d',
+          'yellow-300': '#f6e05e',
+        }
+      }
+    }
+  }
